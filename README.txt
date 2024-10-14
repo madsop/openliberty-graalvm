@@ -2,7 +2,14 @@ Run OpenLiberty with GraalVM.
 
 1. Run mvn clean package
 2. Run mvn package -f pom-jar.xml
-3. TODO: Somehow make it work native
+3. TODO: Somehow make it work native - currently trying native-image -jar target/liberty.jar -H:IncludeResourceBundles=wlp.lib.extract.SelfExtractMessages
+
+Which gives this error:
+Exception in thread "main" java.lang.NullPointerException
+        at wlp.lib.extract.SelfExtractRun.getExtractDirectory(SelfExtractRun.java:140)
+        at wlp.lib.extract.SelfExtractRun.main(SelfExtractRun.java:288)
+        at java.base@23/java.lang.invoke.LambdaForm$DMH/sa346b79c.invokeStaticInit(LambdaForm$DMH)
+
 
 ------------------------
 
