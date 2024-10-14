@@ -1,3 +1,13 @@
+Run OpenLiberty with GraalVM.
+
+1. Run mvn clean package
+2. Run mvn package -f pom-jar.xml
+3. TODO: Somehow make it work native
+
+------------------------
+
+Original readme from OpenLiberty starter:
+
 After you generate a starter project, these instructions will help you with what to do next.
 
 The Open Liberty starter gives you a simple, quick way to get the necessary files to start building
